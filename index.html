@@ -1,65 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
+		<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2023년 버킷리스트</title>
+    <meta property="og:title" content="떼용 - 프로필 링크">
+    <meta property="og:description" content="반갑습니당">
+    <meta property="og:image" content="lisa.png">
+    <title>르탄이 - 프로필 링크</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@400;500;600;700&display=swap');
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
         * {
-            font-family: 'Hahmlet', serif;
+            font-family: "Pretendard",serif;
         }
-        .title {
+        body{
+            background: #44398A;
+        }
+        .profile{
+            width: 100px;
+            height: 100px;
+
+            border-radius: 100%;
+
+            border: 2px solid white;
+
+            background-image: url('lisa.png');
+            background-position: center;
+            background-size: cover;
+        }
+        .main {
             color: white;
-            background-color: tomato;
-            font-size: 24px;
-            padding: 8px 16px;
+            font-size: 20px;
+
+            margin-top: 30px ;
+            margin-bottom: 14px;
+        }
+        .sub{
+            color: white;
+            font-size: 14px;
+
+            margin-top: 0PX;
+            margin-bottom: 30px;
+        }
+        .wrap {
+            width: 300px;
+            margin: 30px auto 0px auto;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .wrap > a {
+            width: 300px;
+            height: 50px;
+
+            background-color: white;
             border-radius: 8px;
-        }
 
-        .bg {
-            width: 360px;
-            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bg-grid.png");
-        }
+            margin-bottom: 10px;
 
-        .msg {
+            font-size: 14px;
             font-weight: bold;
-        }
+            color: #44398A;
 
-        .bucket {
-            width: 160px;
-            height: 160px;
-        }
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
-        .img1 {
-            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-red.png");
-            background-size: cover;
-            background-position: center;
-        }
+            text-decoration: none;
 
-        .img2 {
-            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-lightred.png");
-            background-size: cover;
-            background-position: center;
+            box-shadow: 3px 3px 5px 0px black;
         }
+        .wrap > a:hover {
+            background-color: #f2f2f2;
+        }
+        
     </style>
-    <link rel="stylesheet" type="text/css" href="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/sparta-bucket2.css">
 </head>
-
-<body class="bg center">
-    <h1 class="title">2023 신년계획</h1>
-    <p class="msg">올해는 꼭 모두 지키자!</p>
-    <div class="row flex-row wrap">
-        <div class="bucket img1 center">영어 공부하기</div>
-        <div class="bucket img2 center">분기별로 책 1권씩 읽기</div>
-        <div class="bucket img2 center">운동 꾸준히 하기</div>
-        <div class="bucket img1 center">돈 모으기</div>
-        <div class="bucket img1 center">성과 만들어내기</div>
-        <div class="bucket img2 center">26살 사진기록 남기기</div>
+<body>
+    <div class="wrap">
+        <div class="profile"></div>
+        <hi class="main">떼용</hi>
+        <p class="sub">반갑습니당ㅎㅎ</p>   
+        <a target="_blank" href="https://www.instagram.com/se_00000/?hl=ko">인스타그램</a>
+        <a target="_blank" href="https://blog.naver.com/sy980204">블로그</a>
+        <a target="_blank" href="https://www.youtube.com/channel/UCz-0ln5zf4BGhDMtgaoA5zA">유튜브</a>
     </div>
-
 </body>
-
 </html>
